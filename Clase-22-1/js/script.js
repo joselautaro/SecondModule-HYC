@@ -46,3 +46,32 @@
 
 // console.log(array)
 
+let numeros = [1, 2, 3, 4, 5, 6]
+numeros.pop()
+console.log(numeros)
+
+let colores = ["Rojo", "Verde", "Azul"]
+colores.shift()
+//Eliminamos el indice 0 Todo lo contrario al pop()
+console.log(colores)
+
+let frutas = ["Manzana", "Pera", "Duranzo"]
+let verduras = ["Brócoli", "Zanahoria", "Limón"]
+// Combinamos ambas variables en una
+let comida = frutas.concat(verduras)
+console.log(comida)
+
+let numerosLetras = ["uno", "dos", "tres", "cuatro"]
+// Join: traforma los elementos al valor a un string
+let cadena = numerosLetras.join(", ")
+console.log(cadena)
+
+let letras = ["a", "b", "c", "d", "e"]
+// Reverse: Invierte el orden de los elementos al 100%
+letras.reverse()
+console.log(letras)
+
+let numerosGrandes = [10, 20, 30, 40, 50]
+let subGrupo = numerosGrandes.slice(1, 4)
+console.log(subGrupo)
+
