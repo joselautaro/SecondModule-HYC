@@ -72,6 +72,29 @@ letras.reverse()
 console.log(letras)
 
 let numerosGrandes = [10, 20, 30, 40, 50]
+// Slice: hace un subgrupo desde el 1 hasta el 4 inclusive
 let subGrupo = numerosGrandes.slice(1, 4)
 console.log(subGrupo)
+
+let arrayAnidado = [[1, 2, 3], 4, [5, 6]]
+let arrayAplanado = arrayAnidado.flat()
+console.log(arrayAplanado)
+
+let nombres = ["Ana", "Guillermo", "Blanca", "Nieves", "Cenicienta"]
+let indiceNieves = nombres.indexOf("Nieves")
+console.log(indiceNieves)
+
+let fruteriaVerduleria = ["coco", "ananá", "naranja", "uva", "melon", "sandia",
+"mandarina", "frutilla", "kiwi", "manzana", "banana", "durazno", "pomelo"]
+// Sort: Ordenamos alfabéticamente
+// fruteriaVerduleria.sort()
+let hayManzana= fruteriaVerduleria.includes("manzana")
+console.log(hayManzana)
+
+let animales = ["gato", "perro", "ballena", "leon", "conejo"]
+animales.unshift("Ornitorrinco")
+// console.log(nuevosAnimales)
+console.log(animales)
+
+
 
