@@ -1,6 +1,6 @@
 // bucles for: en javascript son estructuras de control que te permiten ejecutar un bloque de código varias veces, generalmente para recorrer elementos de una lista, como por ejemplo un array
 
-// Un bucle "for" tiene tres partes: inicialización, condición y empresión de incremento
+// Un bucle "for" tiene tres partes: inicialización, condición y expresión de incremento
 
 // 1. Inicialización: Se ejecuta una vez al principio y define una variable de control
 
