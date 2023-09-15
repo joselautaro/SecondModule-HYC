@@ -90,3 +90,12 @@ console.log(mensajeGlobal)
 
 // Activamos/invocamos la funcion
 saludo()
+
+// Porque crear modulos?
+
+// Organizacion: division de código en pequeños fragmentos lógicos
+// Reutilización: Permite que nuestro que pueda reutilizar siempre y cuando pueda
+// Mantenimiento: Facil mantención y depuración porque se centra en alguna funcionalidad específica
+// Colaboración: facilita colaborar entre colegas ya que todos podemos trabajar en modulos diferentes sin afectar el código de los demás
+
+
