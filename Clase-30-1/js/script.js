@@ -3,15 +3,15 @@
 //() indicamos a que estamos haciendo referencia 
 
 // .ready lee inmediamente el documento al cargar
-// $(document).ready(function (){
-//     $("#saludoBtn").click(function () {
-//         alert("Hola Mundo")
-//     })
-// })
+$(document).ready(function (){
+    $("#saludoBtn").click(function () {
+        alert("Hola Mundo")
+    })
+})
 
-// $("#desaparecer").click(function(){
-//     $(".miParrafo").text("Texto nuevo")
-// })
+$("#cambiar").click(function(){
+    $(".miParrafo").text("Texto nuevo")
+})
 
 // Ejemplo 2
 $("#desaparecer").click(function () {
@@ -33,9 +33,9 @@ $("#botonClics").click(function () {
     // Actualizar el exto del contador en la página
     $("#contador").text(contador)
 
-    if(contador >= 5){
-        $("#botonClics").hide()
-    }
+        // if(contador >= 5){
+        //     $("#botonClics").hide()
+        // }
 })
 
 $("#cambiarFondoBtn").click(function(){
@@ -77,3 +77,33 @@ $("#nuevaTarea").keypress(function(e){
         $("#agregarTarea").click()
     }
 })
+// Damos funcionalidad a boton aumentar
+$("#aumentarTexto").click(function(){
+    cambiarTamanio("aumentar")
+})
+// Damos funcionalidad al botón reducir
+$("#reducirTexto").click(function(){
+    cambiarTamanio("reducir")
+})
+// Establecemos las funcionalidades a las funciones cambiarTamanio
+function cambiarTamanio(accion){
+    // Guardamos en una variable la etiqueta p
+        let parrafo = $("p")
+        //Recorremos nuevo parrafo
+        parrafo.each(function(){
+            let tamanioActual = parseInt($(this).css("font-size"))
+            // Declaramos el nuevo tamaño
+            let nuevoTamanio;
+            // Validamos las acciones del usuario incrementando en dos
+            if (accion === "aumentar"){
+                nuevoTamanio = tamanioActual +2;
+                // Lo mismo para decrementar
+            }else if(accion === "reducir"){
+                nuevoTamanio = tamanioActual -2
+            }
+            //Aplicar el nuevo tamaño al texto
+            $(this).css("font-size", nuevoTamanio + "px")
+        })
+}
+
+
