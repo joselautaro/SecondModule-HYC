@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Pseudo Cotizador </title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+
+    <h1>Cotizador de seguros</h1>
+
+
+    <form id="cotizadorForm">
+
+        <label for="marca">Marca: </label>
+        <input type="text" id="marca" required> <br>
+
+        <label for="modelo">Modelo: </label>
+        <input type="text" id="modelo" required> <br>
+
+        <label for="precio">Precio: </label>
+        <input type="text" id="precio" required> <br>
+
+
+        <label for="descuento">Descuento: </label>
+        <input type="text" id="descuento" required> <br>
+
+        <button type="submit">Calcular precio:</button>
+
+
+    </form>
+
+    <!-- Modal -->
+
+    <div id="myModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Resultado de la cotización</h2>
+            <div id="cotizacionInfo">
+                <p id="modalMessage"></p>
+            </div>
+        </div>
+
+    </div>
+
+    
+    <script src="./js/script.js"></script>
+    
+</body>
+</html>
