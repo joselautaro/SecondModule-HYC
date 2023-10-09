@@ -1,0 +1,13 @@
+h1, h5, p{
+    text-align: center;
+}
+
+.container{
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+div{
+    margin: 2px;
+}
